@@ -1,15 +1,251 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  
+
 <head>
-  <meta charset="utf-8">
+  <meta charset= "utf-8">
   <meta name="viewport" content="width=device-width, 
        initial-scale-1, shrink-to-fit=no">
-  <title>This appears in the browser tab</title>
-</head>
 
-<body>bhgvyv
-  hello All your content goes here
-</body>  
-  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
+  <title> Cabiscuits!</title>
+</head>
+<!--
+  A Range Guidelines
+  The project was clearly developed for a client (even if that client if you) for a clear purpose. It exhibits a unified perspective that is reflected in its content, styling, layout, branding, and functionality.
+- The website/webapp is well-organized on a grid created with CSS grid, Bootstrap grid, and/or flexbox properties.
+- The website/webapp is mobile first and fully responsive.
+- Everything functions as it should, with no broken links or paths.
+- Navigation is intuitive and easy to access.
+- The project adheres consistently to a coherent, well designed style guide throughout. If developed by a team, it should be impossible to tell where each team member's contributions begin and end.
+- All design elements including color, typography, and layout come together in a harmonious whole.
+- Color scheme, font/s, and styling were chosen according to the best practices we've discussed, are appropriate to their purposes, and promote usability.
+- The content requirements detailed in the project description have been met or exceeded.
+- Content is well-chosen and well-organized.
+- All text is original (not filler) or provided by the client. Photographs must be original, freely offered for reuse, or provided the appropriate photo credit.
+- All code was written and/or adapted expressly for this project. All "borrowed" code snippets are brief, customized, and fully integrated/made your own.
+- HTML element tags are used appropriately.
+- Class and ID naming is semantic and consistent.
+- Contrast ratios pass WCAG standards at at least the AA level.
+- Images and media are fully responsive as well: no issues with image distortion or loading time.
+- Alt tags are included for all images and media.
+Both HTML and CSS validate without errors.-->
+
+
+
+
+<body>
+  <header>
+    <div class="p-3" id="topHeader">
+      <div class="container">
+        <div id="row">
+          <div class="col-xs 12">
+
+            <h1>CABISCUITS</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('biscuit2.webp')">
+        <div class="carousel-caption">
+          <h5>Get Your Cat the Best!</h5>
+          <p class="label">Your cat only deserves the most delicious treats.Try a CABISCUIT today!</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('biscuit2.webp')">
+        <div class="carousel-caption">
+          <h5>Get Your Cat the Best!</h5>
+          <p class="label">Your cat only deserves the most delicious treats.Try a CABISCUIT today!</p>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('biscuit2.webp')">
+        <div class="carousel-caption">
+          <h5>Get Your Cat the Best!</h5>
+          <p class="label">Your cat only deserves the most delicious treats. Try a CABISCUIT today!</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <h2>Our Treats</h2>
+
+
+  <div class="container">
+    <div class="row gy-3 my-3">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fresh</h5>
+            <p class="card-text">Freshest Biscuits in Town.</p>
+            <a href="order.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fresh</h5>
+            <p class="card-text">Freshest Biscuits in Town.</p>
+            <a href="order.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fresh</h5>
+            <p class="card-text">Freshest Biscuits in Town.
+              </p>
+            <a href="order.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Fresh</h5>
+            <p class="card-text">Freshest Biscuits in Town.</p>
+            <a href="order.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Biscuit 5</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="order.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Biscuit 6</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="order.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Biscuit 7</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="order.html" class="btn btn-primary">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="biscuit3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Biscuit 8</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="order.html" class="btn btn-primary">Order Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Our Bakers</h3>
+  <div class="row gy-3 my-3">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img src="cat1.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Cat1" />
+
+      <img src="cat2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="cat2" />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img src="cat3.avif" class="w-100 shadow-1-strong rounded mb-4" alt="cat3" />
+
+      <img src="cat4.png" class="w-100 shadow-1-strong rounded mb-4" alt="cat4" />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img src="cat5.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="cat5" />
+
+      <img src="cat6.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="cat6" />
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+  <footer>
+    Cabiscuits
+  </footer>
+</body>
+
 </html>
